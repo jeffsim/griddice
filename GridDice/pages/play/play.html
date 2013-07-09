@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>playPage</title>
+
+    <link href="/pages/play/play.css" rel="stylesheet" />
+    <script src="/pages/play/play.js"></script>
+
+    <!-- Bluesky fill-ins -->
+    <!--    <script src="/js/EventMixin.js"></script>-->
+
+    <!-- Include game logic pieces -->
+    <script src="/pages/play/models/GameBoardModel.js"></script>
+    <script src="/pages/play/models/DieModel.js"></script>
+    <script src="/pages/play/models/ScoreCategoryModel.js"></script>
+    <script src="/pages/play/models/ScoreManagerModel.js"></script>
+
+    <!-- Include views -->
+    <script src="/pages/play/views/GameBoardView.js"></script>
+    <script src="/pages/play/views/DieView.js"></script>
+    <script src="/pages/play/views/ScoreCategoryView.js"></script>
+    <script src="/pages/play/views/ScoreManagerView.js"></script>
+
+</head>
+<body>
+    <div class="diceTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="diceDiv" data-win-bind="style.backgroundPosition:face GridDice.FaceConverter">
+        </div>
+    </div>
+    <div class="scoreCategoryTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="scoreDiv" data-win-bind="style.backgroundImage:played GridDice.ScoreCategoryBackgroundImageConverter">
+            <div class="name" data-win-bind="textContent:name"></div>
+            <div class="scoreValue" data-win-bind="textContent:score"></div>
+            <div class="playedDice" data-win-bind="innerHTML:faces GridDice.DieDisplayConverter"></div>
+        </div>
+    </div>
+    <div id="gameOverDialog" style="display:none">
+        <div class='gameOverTitle'>Game over</div>
+        <div class='yourScore'>Your score: <span id="gameOverScore"></span></div>
+        <div id='yourRank'></div>
+        <button id="gotoMainMenu">Main menu</button>
+        <button id="restartGame">Play again</button>
+    </div>
+    <div class="fragment playpage">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Grid Dice</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+            <div class="gameSurface">
+                <div class="scoreCategoriesDiv scoreCategoriesDiv1"></div>
+                <div class="scoreCategoriesDiv scoreCategoriesDiv2"></div>
+                <div class="gameBoardDiv"></div>
+                <div class="droppingDieOverlay"></div>
+                <div class="totalScore"></div>
+                <div class="bonusScore">
+                    <div class="bonusText">Bonus +35 </div>
+                    <div class="bonusDesc">If above total is 63 or more</div>
+                    <div class="bonusValue">0/63</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

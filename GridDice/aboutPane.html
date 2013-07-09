@@ -1,0 +1,32 @@
+﻿<!doctype HTML>
+<html>
+    <head>
+        <title>Help settings flyout</title>
+    </head>
+    <body>
+        <div id="aboutDiv" data-win-control="WinJS.UI.SettingsFlyout" 
+                aria-label="About settings flyout"
+                data-win-options="{width:'narrow'}">
+            <div class="win-header" style="background-color:#072503">
+                <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" 
+                    class="win-backbutton"></button>
+                <div class="win-label">About</div>
+                <img src="images/smalllogo.png" style="position: absolute; right: 40px;"/>
+            </div>
+            <div class="win-content" style="font-size:18pt">
+                Grid Dice is built by Wanderling Games.
+                <br />
+                <br />
+                <a href="http://www.wanderlinggames.com">Visit our site</a>
+
+                <br />
+                <br />
+                This WinJS game is being ported to other platforms using 
+                <a href="http://www.bluesky.io">Bluesky.io</a>
+                <br />
+                <br />
+                Thanks for playing!
+            </div>
+        </div>
+    </body>
+</html>

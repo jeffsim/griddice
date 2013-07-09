@@ -1,0 +1,74 @@
+﻿
+.fragment section {
+    bottom: 0;
+    height: auto !important;
+    margin-top: 0;
+    position: absolute !important;
+    top: 120px;
+}
+
+.titlearea {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.fragment header[role="banner"] .win-backbutton {
+    margin-left: 55px;
+    vertical-align: top;
+    cursor: pointer;
+}
+.titlearea {
+    position:absolute;
+    top:0px;
+    left:100px;
+}
+.playpage section[role="main"] {
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+}
+
+.gameSurface {
+    margin-top: -350px !important;
+}
+
+@media screen and (max-width: 1023px) {
+
+    .gameSurface {
+        margin-top: -572px !important;
+    }
+}
+
+@media screen and (max-width: 1023px) and (max-height:980px) {
+
+
+    .fragment.playpage {
+        transform: scale(.5);
+    }
+       
+    .gameSurface {
+        margin-top: 0px !important;
+    }
+
+    #gameOverDialog {
+        transform: scale(.5);
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .fragment.playpage {
+        transform: scale(.5);
+    }
+    
+.titlearea {
+    font-size:24pt;
+}
+    #gameOverDialog {
+        transform: scale(.5);
+    }
+    .gameSurface {
+        margin-top: 0px !important;
+    }
+}
+
+

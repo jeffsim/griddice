@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- disable IE's Quirks mode -->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
+    <meta charset="utf-8" />
+    <title>GridDice</title>
+
+    <!-- bluesky Styles -->
+    <link href='http://bluesky.io/css/bluesky-ui-dark-1.0-debug.css' rel='stylesheet'>
+
+    <!-- bluesky scripts -->
+    <script src='http://bluesky.io/js/ext/jquery-1.8.0.js' type='text/javascript'></script>
+    <script src='http://bluesky.io/js/bluesky-1.0-min.js' type='text/javascript'></script>
+
+    <!-- GridDice references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/css/webOverrides.css" rel="stylesheet" />
+
+    <script src="/js/jquery.easing.1.3.js"></script>
+    <script src="/js/jquery.transit.js"></script>
+
+    <script src="/js/default.js"></script>
+    <script src="/js/navigator.js"></script>
+    <script src="/js/utilities.js"></script>
+    
+    <script src="/js/SettingsManager.js"></script>
+    <script src="/js/HighScoreManager.js"></script>
+    <script src="/js/AudioMgr.js"></script>
+    <script src="/js/SavedGameManager.js"></script>
+</head>
+<body>
+    <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/home/home.html'}"></div>
+    <div id="appbar" data-win-control="WinJS.UI.AppBar">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'mainMenuCmd', label:'Home', icon:'home', section:'selection'}" type="button"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'moreGamesCmd', label:'More Games', icon:'more', section:'selection'}" type="button"></button>
+        <!--<button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'settingsCmd', label:'Settings', icon:'more', section:'selection'}" type="button"></button> -->
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'restartCmd', label:'Restart', icon:'undo'}" type="button"></button>
+    </div>
+    <div id="appbarButton"></div>
+</body>
+</html>

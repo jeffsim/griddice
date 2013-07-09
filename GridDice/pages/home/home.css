@@ -1,0 +1,112 @@
+﻿
+/* hm: honestly unclear why I need to do this to make the list work */
+.win-listview.win-groups > .win-horizontal > .win-surface {
+    margin-left: 70px;
+}
+
+.homePagelist {
+    width: 100%;
+    height: 100%;
+}
+
+.homepage .startButton {
+    color: black;
+    background-color: white;
+    font-size: 20pt;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 40px 20px 10px 20px;
+    padding: 40px;
+    border-radius: 6px;
+}
+
+    .homepage .startButton:hover {
+        background-color: #072503;
+        color: white;
+    }
+
+.howToPlayTemplate {
+    width: 480px;
+    cursor: default;
+    font-size: 14pt;
+}
+
+.howToNum {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.homepage .scoreTemplate {
+    width: 280px;
+    height: 45px;
+    background-color: #072503;
+}
+
+    .homepage .scoreTemplate .Name {
+        position: absolute;
+        top: 5px;
+        left: 39px;
+        font-size: 18pt;
+    }
+
+    .homepage .scoreTemplate .Rank {
+        position: absolute;
+        top: 3px;
+        left: 6px;
+        font-size: 20pt;
+        font-weight: bold;
+    }
+
+    .homepage .scoreTemplate .Score {
+        position: absolute;
+        top: 5px;
+        right: 12px;
+        font-size: 18pt;
+    }
+
+.homePagelist .win-container {
+    background-color: transparent !important;
+}
+
+    .homePagelist .win-container:hover {
+        background-color: transparent !important;
+        outline: solid 0px;
+    }
+
+@media screen and (-ms-view-state: snapped) {
+    .win-listview.win-groups > .win-horizontal > .win-surface {
+        margin-left: -50px;
+    }
+}
+
+@media screen and (-ms-view-state: portrait) {
+    .homepage section[role=main] {
+        xmargin-left: 100px;
+    }
+}
+
+
+.scoringTable {
+    text-align: left;
+    font-size: 12pt;
+    width: 680px;
+}
+
+    .scoringTable td {
+        padding: 3px;
+        padding-left: 5px;
+    }
+
+    .scoringTable tr:nth-child(even) {
+        background-color: #052f05;
+    }
+
+    .scoringTable tr:nth-child(odd) {
+        background-color: #042402;
+    }
+
+    .scoringTable .head {
+        background-color: #006666 !important;
+        font-weight: bold;
+        font-size: 16pt;
+    }

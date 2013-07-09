@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>homePage</title>
+
+    <link href="/pages/home/home.css" rel="stylesheet" />
+    <script src="/pages/home/home.js"></script>
+</head>
+<body>
+    <div class="headerTemplate" data-win-control="WinJS.Binding.Template">
+        <p style="cursor: default;font-size:32pt;margin:20px 0px" data-win-bind="textContent: title; groupKey: key" role="link">
+        </p>
+    </div>
+    <div class="welcomeTemplate" data-win-control="WinJS.Binding.Template" style="width: 280px; height: 600px;text-align:center">
+        <div class="startButton">Play game</div>
+        Click to play
+    </div>
+    <div class="howToPlayTemplate" data-win-control="WinJS.Binding.Template" style="width: 1720px; height: 600px">
+        <div style="width: 480px; position: absolute; top: 0px; left: 0px;">
+            <span class="howToNum">1.</span> The object of Grid Dice is to get the highest total score by placing dice in score boxes.  The game ends when you have filled all score boxes.
+            <img src="/images/howtoplay.png" />
+        </div>
+        <div style="width: 480px; position: absolute; top: 0px; left: 540px">
+            <span class="howToNum">2.</span> To play, drag your finger/mouse across five dice in the grid, and then tap on a score box. 
+            <br />
+            <br />
+            <img src="/images/howtoplay2.png" style="position: absolute; top: 160px;" />
+        </div>
+        <div style="width: 680px; position: absolute; top: 0px; left: 1080px;">
+            <span class="howToNum">3.</span> Scores follow the classic Yahtzee scoring rules.
+        
+            <table class="scoringTable">
+                <thead>
+
+                    <tr class="head">
+                        <td>Score box</td>
+                        <td>Scoring</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Ones</td>
+                    <td>Sum of all one dice</td>
+                </tr>
+                <tr>
+                    <td>Twos</td>
+                    <td>Sum of all two dice</td>
+                </tr>
+                <tr>
+                    <td>Threes</td>
+                    <td>Sum of all three dice</td>
+                </tr>
+                <tr>
+                    <td>Fours</td>
+                    <td>Sum of all four dice</td>
+                </tr>
+                <tr>
+                    <td>Fives</td>
+                    <td>Sum of all five dice</td>
+                </tr>
+                <tr>
+                    <td>Sixes</td>
+                    <td>Sum of all six dice</td>
+                </tr>
+                <tr>
+                    <td>Bonus</td>
+                    <td>If the sum of the Ones through Sixes is 63, then 35 points are awarded </td>
+                </tr>
+                <tr>
+                    <td>Three of a kind</td>
+                    <td>Sum of all dice</td>
+                </tr>
+                <tr>
+                    <td>Four of a kind</td>
+                    <td>Sum of all dice</td>
+                </tr>
+                <tr>
+                    <td>Full house</td>
+                    <td>25 points</td>
+                </tr>
+                <tr>
+                    <td>Small straight</td>
+                    <td>30 points</td>
+                </tr>
+                <tr>
+                    <td>Large straight</td>
+                    <td>40 points</td>
+                </tr>
+                <tr>
+                    <td>Five of a kind</td>
+                    <td>50 points</td>
+                </tr>
+                <tr>
+                    <td>Chance</td>
+                    <td>Sum of all dice</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="scoreTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="Rank" data-win-bind="textContent: rank"></div>
+        <div class="Name" data-win-bind="innerHTML: name"></div>
+        <div class="Score" data-win-bind="textContent: score"></div>
+    </div>
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Welcome to Grid Dice!</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+
+            <div class="homePagelist" aria-label="Stuff" data-win-control="WinJS.UI.ListView" data-win-options="{ selectionMode: 'none'}"></div>
+        </section>
+    </div>
+</body>
+</html>

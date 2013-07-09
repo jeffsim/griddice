@@ -1,0 +1,17 @@
+{
+ "manifest_version": 2,
+   "name": "Grid Dice",
+  "description": "A whole new way to play the classic game of Yahtzee",
+  "version": "1",
+  "app": {
+   
+    "launch": {
+      "web_url": "http://griddice.bluesky.io"
+    }
+  },
+  "icons": {
+    "128": "logo-128.png"
+  },
+  "permissions": [
+  ]
+}

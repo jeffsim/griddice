@@ -1,0 +1,263 @@
+﻿.playpage section[role=main] {
+    margin-left: 120px;
+}
+
+.gameSurface {
+    position: absolute;
+    margin-top: -248px;
+    margin-left: -550px;
+    top: 50%;
+    left: 50%;
+    background-image: url(/images/gameBoard-large.png);
+    width: 1100px;
+    height: 575px;
+}
+
+.playpage .gameBoardDiv {
+    position: absolute;
+    top: 73px;
+    left: 336px;
+    width: 430px;
+    height: 430px;
+    overflow: hidden;
+}
+
+.playpage .diceDiv {
+    position: absolute;
+    background-image: url('/images/dice.png');
+    background-position: -80px 0px;
+    width: 80px;
+    height: 80px;
+    z-index: 10;
+}
+
+.scoreDiv {
+    width: 256px;
+    height: 70px;
+    position: absolute;
+    border-radius: 5px;
+}
+
+    .scoreDiv .name {
+        font-size: 20pt;
+        padding-left: 8px;
+        padding-top: 1px;
+    }
+
+    .scoreDiv .scoreValue {
+        font-size: 14pt;
+        position: absolute;
+        top: 4px;
+        right: 10px;
+    }
+
+    .scoreDiv .playedDice {
+        position: absolute;
+        left: 8px;
+        top: 40px;
+    }
+
+.scoreCategoriesDiv {
+    position: absolute;
+    width: 300px;
+    height: 460px;
+}
+
+.totalScore {
+    position: absolute;
+    top: 0px;
+    left: 422px;
+    width: 250px;
+    height: 60px;
+    padding-top: 10px;
+    font-size: 20pt;
+    font-weight: bold;
+    color: white;
+    z-index: 12;
+    text-align: center;
+}
+.bonusScore {
+    position: absolute;
+    top: 490px;
+    left: 22px;
+    width: 250px;
+    height: 55px;
+    color: white;
+    z-index: 12;
+}
+    .bonusScore .bonusText {
+        font-size: 20pt;
+        padding-left: 6px;
+        padding-top: 1px;
+    }
+    .bonusScore .bonusDesc {
+        position: absolute;
+        font-size:12pt;
+        left: 8px;
+        top: 36px;
+    }
+    .bonusScore .bonusValue {
+        font-size: 14pt;
+        position: absolute;
+        top: 4px;
+        right: 10px;
+    }
+.scoreCategoriesDiv.scoreCategoriesDiv1 {
+    top: 14px;
+    left: 12px;
+}
+
+.scoreCategoriesDiv.scoreCategoriesDiv2 {
+    top: 14px;
+    left: 822px;
+}
+
+@media screen and (max-width: 1045px) {
+    .scoreCategoriesDiv.scoreCategoriesDiv1 .scoreDiv .name {
+        padding-left: 30px;
+        padding-top: 1px;
+    }
+
+    .scoreCategoriesDiv.scoreCategoriesDiv1 .scoreDiv .playedDice {
+        left: 30px;
+        top: 40px;
+    }
+
+    .scoreCategoriesDiv.scoreCategoriesDiv2 .scoreDiv .scoreValue {
+        right: 30px;
+    }
+    
+    
+    .bonusScore .bonusText {
+        padding-left: 26px;
+    }
+    .bonusScore .bonusDesc {
+        left: 26px;
+    }
+    .bonusScore .bonusValue {
+        right: 10px;
+    }
+}
+
+/* Portrait mode for < 1024 wide */
+@media screen and (max-width: 1023px) {
+
+    .gameSurface {
+        position: absolute;
+        margin-top: -512px;
+        margin-left: -289px;
+        top: 50%;
+        left: 50%;
+        background-image: url(/images/gameBoard-portrait.png);
+        width: 577px;
+        height: 1024px;
+    }
+    .pageTitle {
+        display: none;
+    }
+    .scoreCategoriesDiv.scoreCategoriesDiv1 .scoreDiv .name {
+        padding-left: 8px;
+        padding-top: 1px;
+    }
+
+    .scoreCategoriesDiv.scoreCategoriesDiv1 .scoreDiv .playedDice {
+        left: 8px;
+        top: 40px;
+    }
+
+    .scoreCategoriesDiv.scoreCategoriesDiv2 .scoreDiv .scoreValue {
+        right: 10px;
+    }
+
+    .playpage .gameBoardDiv {
+        top: auto;
+        bottom: 26px;
+        left: 75px;
+    }
+
+    .scoreCategoriesDiv.scoreCategoriesDiv1 {
+        top: 12px;
+        left: 12px;
+    }
+
+    .scoreCategoriesDiv.scoreCategoriesDiv2 {
+        top: 12px;
+        left: 295px;
+    }
+
+    .totalScore {
+        top: 502px;
+        left: 160px;
+    }
+    
+    .bonusScore {
+        top: 440px;
+        left: 22px;
+    }
+    
+    
+    .bonusScore .bonusText {
+        padding-left: 5px;
+    }
+    .bonusScore .bonusDesc {
+        left: 5px;
+    }
+    .bonusScore .bonusValue {
+        right: 10px;
+    }
+}
+
+@media screen and (-ms-view-state: snapped) {
+    #gameOverDialog {
+        transform: scale(.5);
+    }
+}
+
+@media screen and (-ms-view-state: portrait) {
+    .playpage section[role=main] {
+        xmargin-left: 100px;
+    }
+}
+
+
+#gameOverDialog {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    background-color: black;
+    border: 5px solid white;
+    text-align: center;
+    left: 50%;
+    margin-left: -205px;
+    z-index: 1000;
+    -moz-box-shadow: 0 0 5px 5px #888;
+    -webkit-box-shadow: 0 0 5px 5px#888;
+    box-shadow: 0 0 5px 5px #000;
+}
+
+    #gameOverDialog > .gameOverTitle {
+        margin-top: 14px;
+        font-size: 40pt;
+        margin-bottom: 10px;
+    }
+
+    #gameOverDialog > .yourScore {
+        font-size: 20pt;
+        margin-bottom: 10px;
+    }
+
+    #gameOverDialog > #yourRank {
+        font-size: 18pt;
+        margin-bottom: 20px;
+    }
+
+    #gameOverDialog button {
+        padding: 20px;
+        font-size: 16pt;
+        background-color: #333;
+        border: none;
+    }
+
+#gotoMainMenu {
+    margin-right: 30px;
+}
