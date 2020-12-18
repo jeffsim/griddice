@@ -23,6 +23,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -69,6 +71,7 @@
     <Content Include="audio\mp3\slideUp.mp3" />
     <Content Include="audio\mp3\tilesRemoved.mp3" />
     <Content Include="css\default.css" />
+    <Content Include="css\bluesky-ui-dark-1.0-debug.css" />
     <Content Include="css\webOverrides.css" />
     <Content Include="images\blue2.png" />
     <Content Include="images\bluehover2.png" />
@@ -96,6 +99,8 @@
     <Content Include="js\navigator.js" />
     <Content Include="js\SavedGameManager.js" />
     <Content Include="js\settingsManager.js" />
+    <Content Include="js\jquery-1.8.0.js" />
+    <Content Include="js\bluesky-1.0-min.js" />
     <Content Include="js\Utilities.js" />
     <Content Include="pages\home\home.css" />
     <Content Include="pages\home\home.html" />

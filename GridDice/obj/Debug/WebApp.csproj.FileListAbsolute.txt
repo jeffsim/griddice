@@ -1,0 +1,7 @@
+C:\Users\jeffs\Desktop\griddice\GridDice\bin\bluesky.dll.config
+C:\Users\jeffs\Desktop\griddice\GridDice\bin\bluesky.dll
+C:\Users\jeffs\Desktop\griddice\GridDice\bin\bluesky.pdb
+C:\Users\jeffs\Desktop\griddice\GridDice\obj\Debug\WebApp.csprojAssemblyReference.cache
+C:\Users\jeffs\Desktop\griddice\GridDice\obj\Debug\WebApp.csproj.CoreCompileInputs.cache
+C:\Users\jeffs\Desktop\griddice\GridDice\obj\Debug\bluesky.dll
+C:\Users\jeffs\Desktop\griddice\GridDice\obj\Debug\bluesky.pdb
